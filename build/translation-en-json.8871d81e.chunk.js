@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbackend=self.webpackChunkbackend||[]).push([[5237],{5171:e=>{e.exports=JSON.parse('{"customField.label":"Tags","customField.description":"Assign tags to entities"}')}}]);
