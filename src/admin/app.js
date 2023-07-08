@@ -5,6 +5,7 @@ export default {
   config: {
     head: {
       favicon: favicon,
+      title:"papa"
     },
     tutorials: false,
     translations: {

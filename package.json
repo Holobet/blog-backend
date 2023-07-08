@@ -9,6 +9,7 @@
     "better-sqlite3": "8.0.1",
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.27",
+    "patch-package": "^7.0.0",
     "strapi-plugin-content-tags": "^1.0.1"
   },
   "name": "backend",
@@ -16,7 +17,7 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
-    "develop": "strapi develop",
+    "develop": "strapi develop --watch-admin",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
