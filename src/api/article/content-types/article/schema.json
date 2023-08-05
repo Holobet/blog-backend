@@ -11,19 +11,39 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "description": {
       "type": "text",
-      "required": true
+      "required": true,
+      "maxLength": 170,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "content": {
       "type": "richtext",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slug": {
       "type": "uid",
@@ -36,26 +56,34 @@
       "target": "api::category.category",
       "inversedBy": "articles"
     },
-    "image": {
+    "featuredImage": {
       "type": "media",
       "multiple": false,
       "required": false,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
-    "author": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::writer.writer",
-      "inversedBy": "articles"
+    "duration": {
+      "type": "integer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
-    "cktext": {
-      "type": "customField",
-      "options": {
-        "preset": "toolbar"
+    "isFeatured": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
       },
-      "customField": "plugin::ckeditor5.CKEditor"
+      "type": "boolean"
     }
   }
 }
