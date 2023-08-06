@@ -36,15 +36,6 @@
         }
       }
     },
-    "content": {
-      "type": "richtext",
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "slug": {
       "type": "uid",
       "targetField": "title",
@@ -75,7 +66,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "required": true
     },
     "isFeatured": {
       "pluginOptions": {
@@ -84,6 +76,19 @@
         }
       },
       "type": "boolean"
+    },
+    "contentrich": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "required": true
     }
   }
 }
