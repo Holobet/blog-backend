@@ -93,10 +93,11 @@
     "isTrending": {
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       },
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     }
   }
 }
