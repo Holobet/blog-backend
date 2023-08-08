@@ -89,6 +89,14 @@
       },
       "customField": "plugin::ckeditor5.CKEditor",
       "required": true
+    },
+    "isTrending": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean"
     }
   }
 }
