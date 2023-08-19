@@ -110,5 +110,5 @@ exports
 *.cache
 dist
 
-.tmp
+
 .strapi-updater.json
