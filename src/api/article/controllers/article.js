@@ -10,11 +10,7 @@ const { createCoreController } = require('@strapi/strapi').factories;
 module.exports = createCoreController('api::article.article', ({ strapi }) =>  ({
   async handleLike(ctx) {
     // @ts-ignore
-    const sanitizedQueryParams = await this.sanitizeQuery(ctx);
-    // @ts-ignore
-    // const { results, pagination } = await strapi.service('api::article.article').find(sanitizedQueryParams);
-    // @ts-ignore
-    const preEntry = await strapi.entityService.findOne('api::article.article', sanitizedQueryParams, {
+    const preEntry = await strapi.entityService.findOne('api::article.article', ctx.params.id, {
       populate: { someRelation: true },
     });
     const totalLikes = preEntry.likes !== null?preEntry.likes+1:1
@@ -32,12 +28,11 @@ module.exports = createCoreController('api::article.article', ({ strapi }) =>  (
 
 
   async handleDisike(ctx) {
-    // @ts-ignore
-    const sanitizedQueryParams = await this.sanitizeQuery(ctx);
+
     // @ts-ignore
     // const { results, pagination } = await strapi.service('api::article.article').find(sanitizedQueryParams);
     // @ts-ignore
-    const preEntry = await strapi.entityService.findOne('api::article.article', sanitizedQueryParams, {
+    const preEntry = await strapi.entityService.findOne('api::article.article', ctx.params.id, {
       populate: { someRelation: true },
     });
     const totalLikes = preEntry.likes !== null?preEntry.likes-1:0
@@ -54,11 +49,9 @@ module.exports = createCoreController('api::article.article', ({ strapi }) =>  (
   },
   async handleUpdateView(ctx) {
     // @ts-ignore
-    const sanitizedQueryParams = await this.sanitizeQuery(ctx);
-    // @ts-ignore
     // const { results, pagination } = await strapi.service('api::article.article').find(sanitizedQueryParams);
     // @ts-ignore
-    const preEntry = await strapi.entityService.findOne('api::article.article', sanitizedQueryParams, {
+    const preEntry = await strapi.entityService.findOne('api::article.article', ctx.params.id, {
       populate: { someRelation: true },
     });
     const totalViews = preEntry.views !== null?preEntry.views+1:0
