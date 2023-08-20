@@ -36,7 +36,7 @@
         }
       }
     },
-    "slug": {
+    "postUrl": {
       "type": "uid",
       "targetField": "title",
       "required": true
@@ -60,7 +60,7 @@
         }
       }
     },
-    "duration": {
+    "minsToRead": {
       "type": "integer",
       "pluginOptions": {
         "i18n": {
