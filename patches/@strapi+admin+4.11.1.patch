@@ -1,27 +1,5 @@
-diff --git a/node_modules/@strapi/admin/admin/src/pages/HomePage/index.js b/node_modules/@strapi/admin/admin/src/pages/HomePage/index.js
-index af0b084..5b9db63 100644
---- a/node_modules/@strapi/admin/admin/src/pages/HomePage/index.js
-+++ b/node_modules/@strapi/admin/admin/src/pages/HomePage/index.js
-@@ -67,7 +67,7 @@ const HomePage = () => {
-         <LogoContainer>
-           <img alt="" aria-hidden src={cornerOrnamentPath} />
-         </LogoContainer>
--        <Box padding={10}>
-+        {/* <Box padding={10}>
-           <Grid>
-             <GridItem col={8} s={12}>
-               <HomeHeader
-@@ -84,7 +84,7 @@ const HomePage = () => {
-               <SocialLinks />
-             </GridItem>
-           </Grid>
--        </Box>
-+        </Box> */}
-       </Main>
-     </Layout>
-   );
 diff --git a/node_modules/@strapi/admin/index.html b/node_modules/@strapi/admin/index.html
-index a00a161..a38f565 100644
+index a00a161..11d9656 100644
 --- a/node_modules/@strapi/admin/index.html
 +++ b/node_modules/@strapi/admin/index.html
 @@ -6,7 +6,7 @@
@@ -29,7 +7,7 @@ index a00a161..a38f565 100644
      <meta name="viewport" content="width=device-width, initial-scale=1" />
      <meta name="mobile-web-app-capable" content="yes" />
 -    <title>Strapi Admin</title>
-+    <title>HBT Admin</title>
++    <title>HBT Blog Admin</title>
    </head>
    <body>
      <!-- The app hooks into this div -->
