@@ -18,6 +18,7 @@
   "description": "A Strapi application",
   "scripts": {
     "dev": "strapi develop --watch-admin",
+    "postinstall": "patch-package",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
