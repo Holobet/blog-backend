@@ -1,3 +1,16 @@
+diff --git a/node_modules/@strapi/admin/admin/src/pages/Admin/index.js b/node_modules/@strapi/admin/admin/src/pages/Admin/index.js
+index f9264d2..5095450 100644
+--- a/node_modules/@strapi/admin/admin/src/pages/Admin/index.js
++++ b/node_modules/@strapi/admin/admin/src/pages/Admin/index.js
+@@ -93,7 +93,7 @@ const Admin = () => {
+       >
+         <Suspense fallback={<LoadingIndicatorPage />}>
+           <Switch>
+-            <Route path="/" component={HomePage} exact />
++            <Route path="/" component={CM} exact />
+             <Route path="/me" component={ProfilePage} exact />
+             <Route path="/content-manager" component={CM} />
+             {routes}
 diff --git a/node_modules/@strapi/admin/admin/src/pages/HomePage/index.js b/node_modules/@strapi/admin/admin/src/pages/HomePage/index.js
 index af0b084..1ca1cf0 100644
 --- a/node_modules/@strapi/admin/admin/src/pages/HomePage/index.js
