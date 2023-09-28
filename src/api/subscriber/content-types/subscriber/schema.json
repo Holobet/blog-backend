@@ -15,8 +15,12 @@
     "email": {
       "type": "email",
       "private": true,
-      "required": true,
+      "required": false,
       "unique": true
+    },
+    "quizEmail": {
+      "type": "email",
+      "private": true
     }
   }
 }
