@@ -52,6 +52,18 @@
       },
       "customField": "plugin::ckeditor5.CKEditor",
       "required": true
+    },
+    "QuestionImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
