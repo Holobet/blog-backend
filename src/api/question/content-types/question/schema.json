@@ -51,14 +51,15 @@
         "preset": "toolbar"
       },
       "customField": "plugin::ckeditor5.CKEditor",
-      "required": true
+      "required": false
     },
     "QuestionImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true

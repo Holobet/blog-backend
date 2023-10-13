@@ -4,7 +4,8 @@
   "info": {
     "singularName": "quiz-figure",
     "pluralName": "quiz-figures",
-    "displayName": "QuizFigure"
+    "displayName": "QuizFigure",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,11 +25,12 @@
       "type": "string"
     },
     "imageUrl": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -42,7 +44,7 @@
         }
       },
       "type": "text",
-      "required": true
+      "required": false
     }
   }
 }

@@ -18,7 +18,7 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true,
+      "required": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -27,7 +27,7 @@
     },
     "description": {
       "type": "string",
-      "required": true,
+      "required": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -42,7 +42,7 @@
     "featuredImage": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
@@ -60,19 +60,6 @@
       "relation": "oneToMany",
       "target": "api::question.question",
       "mappedBy": "quiz"
-    },
-    "quizImage": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
     },
     "quiz_category": {
       "type": "relation",
@@ -120,22 +107,9 @@
         }
       },
       "type": "string",
-      "required": true
+      "required": false
     },
-    "logo1": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "logo2": {
+    "thumbnail": {
       "type": "media",
       "multiple": false,
       "required": false,
